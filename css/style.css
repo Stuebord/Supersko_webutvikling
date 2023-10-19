@@ -7,6 +7,11 @@ header nav ul{
     list-style: none;
 }
 
+#bilde1{
+    width: 50%;
+    height: 50%;
+}
+
 header nav ul li{
     display: flex;
     flex-direction: row;
