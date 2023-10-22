@@ -20,15 +20,6 @@ header ul li {
     margin-right: 20px;
 }
 
-footer{
-    background-color: #fff200;
-}
-
-footer ul{
-    list-style: none;
-    text-align: center;
-}
-
 .index-bilde{
     width: 80%;
     height: 80%;
@@ -43,6 +34,10 @@ footer ul{
     font-weight: 600;
 }
 
+.produkt{
+    margin-bottom: auto;
+}
+
 .prevpris{
     color: #858585;
 }
@@ -51,9 +46,6 @@ footer ul{
     color: #cf0000;
 }
 
-.handlekurv-link{
-    margin-left: auto;
-}
 
 .black-btn {
     text-align: center;
@@ -97,11 +89,18 @@ footer ul{
     border: 1px solid #ffffff;
 }
 
+.header-liste{
+    text-align: right;
+    margin-right: 1rem;
+}
+
 #handlekurvbilde{
     width: 30%;
 }
 
 #logo {
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -111,10 +110,16 @@ footer ul{
     font-weight: 600;
 }
 
+#til-kassen{
+    color: #000;
+    background-color: #fff200;
+    padding: 0.5rem;
+}
+
 @media screen and (min-width: 600px) {
     .produkt {
-        flex-basis: calc(33.33% - 20px);
-        margin-bottom: 8rem;
+        flex-basis: calc(33.33% - 20px); /*Brukte chat gpt for denne linjen*/
+        margin-bottom: auto;
     }
     .produkt-bilde{
         width: 40%;
