@@ -1,27 +1,81 @@
 body{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-header nav ul{
+header{
+    background-color: #fff200;
+}
+
+header ul {
     list-style: none;
-}
-
-#bilde1{
-    width: 50%;
-    height: 50%;
-}
-
-header nav ul li{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }
 
-.black-btn{
+header ul li {
+    margin-right: 20px;
+}
+
+footer{
+    background-color: #fff200;
+}
+
+footer ul{
+    list-style: none;
     text-align: center;
-    padding: 20px;
+}
+
+.index-bilde{
+    width: 80%;
+    height: 80%;
+}
+
+.produkt-bilde{
+    width: 100%;
+}
+
+.produktnavn{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.prevpris{
+    color: #858585;
+}
+
+.curpris{
+    color: #cf0000;
+}
+
+.handlekurv-link{
+    margin-left: auto;
+}
+
+.black-btn {
+    text-align: center;
+    flex: 1;
+    padding: 0.5rem;
     color: #fff;
     background-color: #000000;
+    margin: 0 2px; 
+    border: 1px solid #ffffff; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+#produktene{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 #rod-banner{
@@ -31,4 +85,38 @@ header nav ul li{
     background-color: #cf0000;
     color: #fff;
     font-weight: 400;
+}
+
+#legg-i-handlekurv{
+    text-align: center;
+    flex: 1;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #000000;
+    margin: 0 2px; 
+    border: 1px solid #ffffff;
+}
+
+#handlekurvbilde{
+    width: 30%;
+}
+
+#logo {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#total-pris{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+    .produkt {
+        flex-basis: calc(33.33% - 20px);
+        margin-bottom: 8rem;
+    }
+    .produkt-bilde{
+        width: 40%;
+    }
 }
